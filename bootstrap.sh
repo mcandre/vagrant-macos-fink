@@ -19,7 +19,6 @@ clt_placeholder='/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
     rm XQuartz-2.7.11.dmg &&
     curl -OL https://github.com/fink/scripts/releases/download/setup%2F0.42.0/InstallFink.tgz &&
     tar xzvf InstallFink.tgz &&
-    sudo expect -f patronum.expect &&
+    yes '' | sudo InstallFink/Install\ Fink.tool &&
     yes | /sw/bin/pathsetup.sh &&
-    rm patronum.expect &&
     rm InstallFink.tgz
