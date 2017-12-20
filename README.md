@@ -4,7 +4,8 @@
 
 ```console
 $ vagrant up
-...
+$ vagrant ssh -c 'sudo fink -y install fish && fish --version'
+fish, version 2.6.0
 ```
 
 # REQUIREMENTS
