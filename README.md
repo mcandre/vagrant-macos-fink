@@ -13,9 +13,8 @@ fish, version 2.6.0
 * [macOS Vagrant base box](https://github.com/mcandre/packer-templates/tree/master/macos)
 * [Vagrant](https://www.vagrantup.com)
 * [VMware](https://www.vmware.com)
+* [vagrant-vmware-{fusion,workstation} plugin](https://www.vagrantup.com/vmware/index.html)
 
 # EXPORT
 
-```console
-$ vagrant package --output vagrant-macos-fink.box
-```
+Unfortunately, VMware-provided Vagrant VM's are not easy to export for reuse in downstream Vagrant boxes.
