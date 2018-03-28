@@ -1,5 +1,9 @@
 # vagrant-macos-fink: a Vagrant box with fink preinstalled
 
+# VAGRANT CLOUD
+
+https://app.vagrantup.com/mcandre/boxes/vagrant-macos-fink
+
 # EXAMPLE
 
 ```console
@@ -10,10 +14,10 @@ fish, version 2.6.0
 
 # REQUIREMENTS
 
-* [macOS Vagrant base box](https://github.com/mcandre/packer-templates/tree/master/macos)
 * [Vagrant](https://www.vagrantup.com)
-* [VMware](https://www.vmware.com)
+* [VirtualBox](https://www.virtualbox.org/) and/or [VMware](https://www.vmware.com)
 * [vagrant-vmware-{fusion,workstation} plugin](https://www.vagrantup.com/vmware/index.html)
+* [vagrant-package-vmware](https://github.com/bacongravy/vagrant-package-vmware)
 
 ## Recommended
 
@@ -21,4 +25,6 @@ fish, version 2.6.0
 
 # EXPORT
 
-Unfortunately, VMware-provided Vagrant VM's are not easy to export for reuse in downstream Vagrant boxes.
+```console
+$ make boxes
+```
